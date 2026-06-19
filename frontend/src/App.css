@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1; /* Indigo 500 */
+  --color-primary-hover: #4f46e5; /* Indigo 600 */
+  
+  --color-dark: #09090b; /* Zinc 950 */
+  --color-darker: #000000;
+  
+  --color-card: #18181b; /* Zinc 900 */
+  --color-card-border: #27272a; /* Zinc 800 */
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}
